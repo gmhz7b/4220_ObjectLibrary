@@ -31,7 +31,7 @@ public final class RoundButton: UIButton {
     
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
-        updateShadowOpacity(show: titleLabel?.alpha == 1.0)
+        updateShadowOpacity(show: !isHighlighted)
     }
     
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
